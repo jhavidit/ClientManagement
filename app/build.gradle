@@ -37,6 +37,9 @@ android {
     dataBinding {
         enabled = true
     }
+    viewBinding {
+        enabled = true
+    }
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         kotlinOptions {
             jvmTarget = "1.8"
@@ -121,5 +124,7 @@ dependencies {
     implementation "androidx.work:work-runtime-ktx:$workmanager_version"
 
     implementation "com.airbnb.android:lottie:3.4.1"
+
+    implementation 'com.karumi:dexter:6.0.1'
 
 }
