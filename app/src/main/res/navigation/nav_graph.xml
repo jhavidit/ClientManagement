@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/clientDetails">
+
+    <fragment
+        android:id="@+id/clientDetails"
+        android:name="com.jhaFinancial.clientManagement.view.ClientDetails"
+        android:label="fragment_client_details"
+        tools:layout="@layout/fragment_client_details">
+        <action
+            android:id="@+id/action_clientDetails_to_clientCompleteDetails"
+            app:destination="@id/clientCompleteDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/clientCompleteDetails"
+        android:name="com.jhaFinancial.clientManagement.view.ClientCompleteDetails"
+        android:label="ClientCompleteDetails" />
+</navigation>

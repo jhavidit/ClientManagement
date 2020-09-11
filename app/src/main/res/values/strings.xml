@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Client Management</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pan">PAN</string>
+    <string name="client_image">client image</string>
+    <string name="total_number_of_clients">Total Number Of Clients</string>
 </resources>
